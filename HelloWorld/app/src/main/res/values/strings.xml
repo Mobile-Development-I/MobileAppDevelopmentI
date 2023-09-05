@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="main_text">Hello World! My name is Jaresi and this is my dog Java!</string>
+    <string name="button_text">Say Hello!</string>
+</resources>
