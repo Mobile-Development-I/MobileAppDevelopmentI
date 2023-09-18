@@ -1,13 +1,14 @@
 package com.jaresi.wordle
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     var guesses = emptyList<String>()
@@ -26,29 +27,40 @@ class MainActivity : AppCompatActivity() {
         correctWord.text = FourLetterWordList.getRandomFourLetterWord()
 
         submitButton.setOnClickListener {
-            var guessedWord: TextView
-            var checkField: TextView
+            val guessedWord: TextView
+            val checkField: TextView
+            val guessNum: LinearLayout
+            val checkGroup: LinearLayout
 
             if (guessCount == 0){
+                guessNum = findViewById<LinearLayout>(R.id.firstGuess)
+                checkGroup = findViewById<LinearLayout>(R.id.firstCheck)
                 guessedWord = findViewById<TextView>(R.id.guess1)
                 checkField = findViewById<TextView>(R.id.check1)
            }
             else if (guessCount == 1) {
+                guessNum = findViewById<LinearLayout>(R.id.secondGuess)
+                checkGroup = findViewById<LinearLayout>(R.id.secondCheck)
                 guessedWord = findViewById<TextView>(R.id.guess2)
                 checkField = findViewById<TextView>(R.id.check2)
             }
             else {
+                guessNum = findViewById<LinearLayout>(R.id.thirdGuess)
+                checkGroup = findViewById<LinearLayout>(R.id.thirdCheck)
                 guessedWord = findViewById<TextView>(R.id.guess3)
                 checkField = findViewById<TextView>(R.id.check3)
             }
 
-            val gWord = guessField.text.toString()
+            val gWord = guessField.text.toString().uppercase()
             guessedWord.text = gWord
             checkField.text = checkGuess(gWord)
+            guessNum.visibility = View.VISIBLE
+            checkGroup.visibility = View.VISIBLE
             guessedWord.visibility = View.VISIBLE
             checkField.visibility = View.VISIBLE
             guessField.text.clear()
             guessCount += 1
+            closeKeyboard()
         }
     }
 
@@ -78,7 +90,26 @@ class MainActivity : AppCompatActivity() {
         return result
     }
 
-    private fun reset(guessField: EditText){
-        guessField.text.clear()
+    private fun closeKeyboard() {
+        // this will give us the view
+        // which is currently focus
+        // in this layout
+        val view = this.currentFocus
+
+        // if nothing is currently
+        // focus then this will protect
+        // the app from crash
+        if (view != null) {
+
+            // now assign the system
+            // service to InputMethodManager
+            val manager = getSystemService(
+                INPUT_METHOD_SERVICE
+            ) as InputMethodManager
+            manager
+                .hideSoftInputFromWindow(
+                    view.windowToken, 0
+                )
+        }
     }
 }
