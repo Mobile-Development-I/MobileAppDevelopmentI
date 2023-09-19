@@ -11,7 +11,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    var guesses = emptyList<String>()
     var guessCount = 0
     val wordToGuess = FourLetterWordList.getRandomFourLetterWord()
 
@@ -23,8 +22,7 @@ class MainActivity : AppCompatActivity() {
         var guessField = findViewById<EditText>(R.id.guessField)
         var submitButton = findViewById<Button>(R.id.submitButton)
 
-        //correctWord.text = ""
-        correctWord.text = FourLetterWordList.getRandomFourLetterWord()
+        correctWord.text = wordToGuess
 
         submitButton.setOnClickListener {
             val guessedWord: TextView
