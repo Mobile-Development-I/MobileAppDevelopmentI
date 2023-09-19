@@ -96,8 +96,10 @@ class MainActivity : AppCompatActivity() {
             findViewById<LinearLayout>(R.id.thirdGuess).visibility = View.GONE
             findViewById<LinearLayout>(R.id.thirdCheck).visibility = View.GONE
             findViewById<pl.droidsonroids.gif.GifImageView>(R.id.celebrateGif).visibility = View.GONE
+            findViewById<pl.droidsonroids.gif.GifImageView>(R.id.sadGif).visibility = View.GONE
             findViewById<TextView>(R.id.header).visibility = View.GONE
             findViewById<LinearLayout>(R.id.guessGroup).visibility = View.VISIBLE
+            findViewById<TextView>(R.id.wrongHeader).visibility = View.GONE
             restartButton.visibility = View.GONE
             submitButton.isEnabled = true
             submitButton.isClickable = true
