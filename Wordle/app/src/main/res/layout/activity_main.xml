@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="0sp"
         android:orientation="vertical"
@@ -166,6 +167,45 @@
                 android:visibility="gone"/>
         </LinearLayout>
 
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/celebrateGif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/giphy"
+            android:layout_weight="2"
+            android:layout_marginHorizontal="45sp"
+            android:layout_marginTop="40sp"
+            android:visibility="gone"
+            />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/sadGif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/giphy_sad"
+            android:layout_weight="2"
+            android:layout_marginHorizontal="25sp"
+            android:layout_marginVertical="30sp"
+            android:layout_marginTop="40sp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/wrongHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Out of tries!"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOU WIN!!!"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:visibility="gone"
+            />
         <TextView
             android:id="@+id/correctWord"
             android:layout_width="match_parent"
@@ -174,10 +214,25 @@
             android:textSize="40sp"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:gravity="bottom"
+            android:gravity="center"
             tools:ignore="RtlCompat"
             android:layout_marginBottom="25sp"/>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="restart"
+        app:layout_constraintTop_toBottomOf="@id/main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="10sp"
+        android:layout_marginHorizontal="15sp"
+        android:visibility="gone"
+        />
+
     <LinearLayout
         android:id="@+id/guessGroup"
         android:layout_width="match_parent"

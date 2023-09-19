@@ -12,16 +12,17 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     var guessCount = 0
-    val wordToGuess = FourLetterWordList.getRandomFourLetterWord()
+    var wordToGuess = FourLetterWordList.getRandomFourLetterWord()
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var correctWord = findViewById<TextView>(R.id.correctWord)
+
         var guessField = findViewById<EditText>(R.id.guessField)
         var submitButton = findViewById<Button>(R.id.submitButton)
-
+        val restartButton = findViewById<Button>(R.id.restartButton)
+        val correctWord = findViewById<TextView>(R.id.correctWord)
         correctWord.text = wordToGuess
 
         submitButton.setOnClickListener {
@@ -47,18 +48,54 @@ class MainActivity : AppCompatActivity() {
                 checkGroup = findViewById<LinearLayout>(R.id.thirdCheck)
                 guessedWord = findViewById<TextView>(R.id.guess3)
                 checkField = findViewById<TextView>(R.id.check3)
+                submitButton.isEnabled = false
+                submitButton.isClickable = false
             }
 
             val gWord = guessField.text.toString().uppercase()
             guessedWord.text = gWord
+
             checkField.text = checkGuess(gWord)
             guessNum.visibility = View.VISIBLE
             checkGroup.visibility = View.VISIBLE
             guessedWord.visibility = View.VISIBLE
             checkField.visibility = View.VISIBLE
             guessField.text.clear()
-            guessCount += 1
+
             closeKeyboard()
+
+            if (checkGuess(gWord) == "OOOO"){
+                findViewById<pl.droidsonroids.gif.GifImageView>(R.id.celebrateGif).visibility = View.VISIBLE
+                findViewById<TextView>(R.id.header).visibility = View.VISIBLE
+                findViewById<LinearLayout>(R.id.guessGroup).visibility = View.GONE
+                restartButton.visibility = View.VISIBLE
+                //findViewById<TextView>(R.id.correctWord).visibility = View.VISIBLE
+            }
+            else if (guessCount == 2){
+                findViewById<pl.droidsonroids.gif.GifImageView>(R.id.sadGif).visibility = View.VISIBLE
+                findViewById<TextView>(R.id.wrongHeader).visibility = View.VISIBLE
+                findViewById<TextView>(R.id.header).visibility = View.VISIBLE
+            }
+
+            guessCount += 1
+        }
+
+        restartButton.setOnClickListener {
+            wordToGuess = FourLetterWordList.getRandomFourLetterWord()
+            correctWord.text = wordToGuess
+            guessCount = 0
+            findViewById<TextView>(R.id.guess1).text = ""
+            findViewById<LinearLayout>(R.id.firstCheck).visibility = View.GONE
+            findViewById<LinearLayout>(R.id.secondGuess).visibility = View.GONE
+            findViewById<LinearLayout>(R.id.secondCheck).visibility = View.GONE
+            findViewById<LinearLayout>(R.id.thirdGuess).visibility = View.GONE
+            findViewById<LinearLayout>(R.id.thirdCheck).visibility = View.GONE
+            findViewById<pl.droidsonroids.gif.GifImageView>(R.id.celebrateGif).visibility = View.GONE
+            findViewById<TextView>(R.id.header).visibility = View.GONE
+            findViewById<LinearLayout>(R.id.guessGroup).visibility = View.VISIBLE
+            restartButton.visibility = View.GONE
+            submitButton.isEnabled = true
+            submitButton.isClickable = true
         }
     }
 
