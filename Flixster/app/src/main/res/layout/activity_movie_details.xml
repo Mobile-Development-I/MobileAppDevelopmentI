@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="20sp"
+        android:layout_marginHorizontal="15sp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/movie_image_large"
+            android:layout_width="505sp"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Movie poster" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8sp"/>
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginVertical="8sp"
+            android:layout_marginHorizontal="13sp"/>
+        <ImageButton
+            android:id="@+id/like_button"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/heart"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5sp"
+            android:scaleType="fitCenter"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
