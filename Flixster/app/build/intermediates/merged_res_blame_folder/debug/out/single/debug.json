@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.codepath.flixster.app-merged_res-28:/layout_fragment_movies_list.xml.flat",
+        "source": "com.codepath.flixster.app-main-30:/layout/fragment_movies_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.codepath.flixster.app-merged_res-28:/layout_fragment_movie.xml.flat",
+        "source": "com.codepath.flixster.app-main-30:/layout/fragment_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\drawable_heart.png.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\drawable\\heart.png"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\layout_fragment_movie.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\layout\\fragment_movie.xml"
+    },
+    {
+        "merged": "com.codepath.flixster.app-merged_res-28:/layout_liked_movie.xml.flat",
+        "source": "com.codepath.flixster.app-main-30:/layout/liked_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\layout_fragment_movies_list.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\layout\\fragment_movies_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\layout_activity_movie_details.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\layout\\activity_movie_details.xml"
+    },
+    {
+        "merged": "com.codepath.flixster.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "com.codepath.flixster.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\layout_placeholder.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\layout\\placeholder.xml"
+    },
+    {
+        "merged": "com.codepath.flixster.app-merged_res-28:/layout_liked_list.xml.flat",
+        "source": "com.codepath.flixster.app-main-30:/layout/liked_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\drawable_ic_android_black_24dp.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\drawable\\ic_android_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-main-30:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-merged_res-28:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\jares\\.gradle\\daemon\\7.3.3\\com.codepath.flixster.app-pngs-23:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    }
+]

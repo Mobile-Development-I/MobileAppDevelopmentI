@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+drawable heart
+drawable ic_android_black_24dp
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id content
+id details
+id framed_liked_list
+id like_button
+id like_heart
+id liked_list
+id liked_movie_image
+id linearLayout
+id list
+id movie_description
+id movie_image
+id movie_image_large
+id movie_title
+id progress
+id title
+layout activity_main
+layout activity_movie_details
+layout fragment_movie
+layout fragment_movies_list
+layout liked_list
+layout liked_movie
+layout placeholder
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style AppTheme
