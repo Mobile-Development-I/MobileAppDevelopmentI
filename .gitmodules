@@ -1,3 +1,6 @@
 [submodule "Lab4"]
 	path = Lab4
 	url = https://github.com/jaresinunez/Lab4.git
+[submodule "Lab4Pt2"]
+	path = Lab4Pt2
+	url = https://github.com/jaresinunez/Lab4Pt2.git
