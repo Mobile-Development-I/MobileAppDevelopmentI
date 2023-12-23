@@ -16,3 +16,6 @@
 [submodule "BitFitPt2"]
 	path = BitFitPt2
 	url = https://github.com/jaresinunez/BitFitPt2.git
+[submodule "Booklet"]
+	path = Booklet
+	url = https://github.com/Mobile-App-Dev-23/BookLet.git
