@@ -10,3 +10,9 @@
 [submodule "CodepathLab3"]
 	path = CodepathLab3
 	url = https://github.com/jaresinunez/CodepathLab3.git
+[submodule "BitFitPt1"]
+	path = BitFitPt1
+	url = https://github.com/jaresinunez/BitFitPt1.git
+[submodule "BitFitPt2"]
+	path = BitFitPt2
+	url = https://github.com/jaresinunez/BitFitPt2.git
