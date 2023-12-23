@@ -4,3 +4,6 @@
 [submodule "Lab4Pt2"]
 	path = Lab4Pt2
 	url = https://github.com/jaresinunez/Lab4Pt2.git
+[submodule "Lab4Pt3"]
+	path = Lab4Pt3
+	url = https://github.com/jaresinunez/Lab4Pt3.git
